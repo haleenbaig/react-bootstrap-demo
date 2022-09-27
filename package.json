@@ -14,8 +14,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-	"predeploy": "npm run build",
-	"deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build && cp build/index.html build/404.html", // this will prevent page reloads to give a  404 error
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
